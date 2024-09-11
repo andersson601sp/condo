@@ -1,15 +1,18 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Meus Chamados</title>
     <!-- Bootstrap CSS -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
     <style>
         body {
-            background-color: #f4f6f9;
+            background-color: #aedeb2;
         }
+
         .chamados-container {
             padding: 20px;
             max-width: 1000px;
@@ -19,50 +22,64 @@
             box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
             overflow-x: auto;
         }
+
         .navbar {
             background-color: #007bff;
         }
-        .navbar-brand, .nav-link {
+
+        .navbar-brand,
+        .nav-link {
             color: white !important;
         }
+
         .navbar-toggler {
             border: none;
         }
+
         .navbar-toggler-icon {
             color: white;
         }
+
         .table {
             margin-top: 20px;
         }
+
         .table th {
             background-color: #007bff;
             color: white;
         }
+
         .btn-action {
             margin-right: 5px;
         }
-        .btn-voltar, .btn-novo {
+
+        .btn-voltar,
+        .btn-novo {
             margin-top: 20px;
             width: 150px;
             height: 40px;
         }
+
         .btn-voltar {
             background-color: #6c757d;
             color: white;
         }
+
         .btn-novo {
             background-color: #28a745;
             color: white;
         }
     </style>
 </head>
+
 <body>
 
     <!-- Navbar -->
     <nav class="navbar navbar-expand-lg navbar-dark mb-4">
         <div class="container-fluid">
             <a class="navbar-brand" href="#">Sistema de Chamados</a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
             <div class="collapse navbar-collapse" id="navbarNav">
@@ -106,9 +123,24 @@
                     <td>Portão de Entrada</td>
                     <td>Aberto</td>
                     <td>
-                        <button class="btn btn-sm btn-primary btn-action" onclick="window.location.href = 'visualizar.html';">Visualizar</button>
-                        <button class="btn btn-sm btn-warning btn-action" onclick="window.location.href = 'editar.html';">Editar</button>
-                        <button class="btn btn-sm btn-danger btn-action" data-bs-toggle="modal" data-bs-target="#confirmDeleteModal">Excluir</button>
+                        <!-- Botão Visualizar -->
+                        <button class="btn btn-sm btn-primary mt-1 btn-action"
+                            onclick="window.location.href = 'visualizar.html';">
+                            <i class="fas fa-eye"></i> <!-- Ícone de olho para visualizar -->
+                        </button>
+
+                        <!-- Botão Editar -->
+                        <button class="btn btn-sm btn-warning mt-1 btn-action"
+                            onclick="window.location.href = 'editar.html';">
+                            <i class="fas fa-edit"></i> <!-- Ícone de lápis para editar -->
+                        </button>
+
+                        <!-- Botão Excluir -->
+                        <button class="btn btn-sm btn-danger mt-1 btn-action" data-bs-toggle="modal"
+                            data-bs-target="#confirmDeleteModal">
+                            <i class="fas fa-trash"></i> <!-- Ícone de lixeira para excluir -->
+                        </button>
+
                     </td>
                 </tr>
                 <tr>
@@ -117,9 +149,24 @@
                     <td>Piscina</td>
                     <td>Em Andamento</td>
                     <td>
-                        <button class="btn btn-sm btn-primary btn-action" onclick="window.location.href = 'visualizar.html';">Visualizar</button>
-                        <button class="btn btn-sm btn-warning btn-action" onclick="window.location.href = 'editar.html';">Editar</button>
-                        <button class="btn btn-sm btn-danger btn-action" data-bs-toggle="modal" data-bs-target="#confirmDeleteModal">Excluir</button>
+                        <!-- Botão Visualizar -->
+                        <button class="btn btn-sm btn-primary mt-1 btn-action"
+                            onclick="window.location.href = 'visualizar.html';">
+                            <i class="fas fa-eye"></i> <!-- Ícone de olho para visualizar -->
+                        </button>
+
+                        <!-- Botão Editar -->
+                        <button class="btn btn-sm btn-warning mt-1 btn-action"
+                            onclick="window.location.href = 'editar.html';">
+                            <i class="fas fa-edit"></i> <!-- Ícone de lápis para editar -->
+                        </button>
+
+                        <!-- Botão Excluir -->
+                        <button class="btn btn-sm btn-danger mt-1 btn-action" data-bs-toggle="modal"
+                            data-bs-target="#confirmDeleteModal">
+                            <i class="fas fa-trash"></i> <!-- Ícone de lixeira para excluir -->
+                        </button>
+
                     </td>
                 </tr>
                 <tr>
@@ -128,9 +175,24 @@
                     <td>Corredor</td>
                     <td>Concluído</td>
                     <td>
-                        <button class="btn btn-sm btn-primary btn-action" onclick="window.location.href = 'visualizar.html';">Visualizar</button>
-                        <button class="btn btn-sm btn-warning btn-action" onclick="window.location.href = 'editar.html';">Editar</button>
-                        <button class="btn btn-sm btn-danger btn-action" data-bs-toggle="modal" data-bs-target="#confirmDeleteModal">Excluir</button>
+                        <!-- Botão Visualizar -->
+                        <button class="btn btn-sm btn-primary mt-1 btn-action"
+                            onclick="window.location.href = 'visualizar.html';">
+                            <i class="fas fa-eye"></i> <!-- Ícone de olho para visualizar -->
+                        </button>
+
+                        <!-- Botão Editar -->
+                        <button class="btn btn-sm btn-warning mt-1 btn-action"
+                            onclick="window.location.href = 'editar.html';">
+                            <i class="fas fa-edit"></i> <!-- Ícone de lápis para editar -->
+                        </button>
+
+                        <!-- Botão Excluir -->
+                        <button class="btn btn-sm btn-danger mt-1 btn-action" data-bs-toggle="modal"
+                            data-bs-target="#confirmDeleteModal">
+                            <i class="fas fa-trash"></i> <!-- Ícone de lixeira para excluir -->
+                        </button>
+
                     </td>
                 </tr>
             </tbody>
@@ -138,32 +200,35 @@
 
         <!-- Botões: Voltar e Novo Chamado -->
         <div class="d-flex justify-content-between mt-4">
-            <button type="button" class="btn btn-novo" onclick="window.location.href = 'chamado.html';">Novo Chamado</button>
+            <button type="button" class="btn btn-novo" onclick="window.location.href = 'chamado.html';">Novo
+                Chamado</button>
             <button type="button" class="btn btn-voltar" onclick="window.location.href = 'index.html';">Voltar</button>
         </div>
     </div>
 
     <!-- Modal de Confirmação -->
-<div class="modal fade" id="confirmDeleteModal" tabindex="-1" aria-labelledby="confirmDeleteLabel" aria-hidden="true">
-    <div class="modal-dialog">
-      <div class="modal-content">
-        <div class="modal-header">
-          <h5 class="modal-title" id="confirmDeleteLabel">Confirmar Exclusão</h5>
-          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+    <div class="modal fade" id="confirmDeleteModal" tabindex="-1" aria-labelledby="confirmDeleteLabel"
+        aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="confirmDeleteLabel">Confirmar Exclusão</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    Tem certeza de que deseja excluir este chamado? Esta ação não pode ser desfeita.
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cancelar</button>
+                    <button type="button" class="btn btn-danger">Excluir</button>
+                </div>
+            </div>
         </div>
-        <div class="modal-body">
-          Tem certeza de que deseja excluir este chamado? Esta ação não pode ser desfeita.
-        </div>
-        <div class="modal-footer">
-          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cancelar</button>
-          <button type="button" class="btn btn-danger">Excluir</button>
-        </div>
-      </div>
     </div>
-  </div>
 
     <!-- Bootstrap JS -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
 
 </body>
+
 </html>
