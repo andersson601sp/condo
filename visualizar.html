@@ -16,6 +16,7 @@
             display: flex;
             justify-content: space-between;
             gap: 20px;
+            
         }
 
         .detalhes-chamado,
@@ -50,7 +51,6 @@
             padding: 20px;
             border-radius: 8px;
             box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
-            max-height: 500px;
             /* Define a altura máxima */
         }
 
@@ -129,6 +129,16 @@
         .btn-enviar:hover {
             background-color: #0056b3;
         }
+        /* Responsividade */
+@media (max-width: 768px) {
+    .chamado-container {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .historico-container {
+        max-width: 100%;
+    }
     </style>
 </head>
 
@@ -162,7 +172,7 @@
     </nav>
 
     <!-- Visualização de Chamado -->
-    <div class="container chamado-container">
+    <div class="container chamado-container d-flex">
         <!-- Detalhes do Chamado -->
         <div class="detalhes-chamado">
             <h4 class="text-center mb-4">Detalhes do Chamado</h4>
