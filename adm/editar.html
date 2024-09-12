@@ -11,19 +11,24 @@
         body {
             background-color: #f4f6f9;
         }
+
         .navbar {
             background-color: #007bff;
         }
+
         .navbar-brand,
         .nav-link {
             color: white !important;
         }
+
         .nav-link {
             color: white;
         }
+
         .nav-link:hover {
             color: #ccc;
         }
+
         .chamado-container {
             max-width: 900px;
             margin: auto;
@@ -74,6 +79,37 @@
             border: 1px solid #ddd;
         }
 
+        /* Estilo personalizado para a div do checkbox */
+        .custom-checkbox-container {
+            border: 2px solid #e24121;
+            /* Borda destacada */
+            border-radius: 5px;
+            padding: 10px;
+            background-color: #f8f9fa;
+            /* Fundo leve para destacar */
+        }
+
+        /* Estilo personalizado para o checkbox */
+        .custom-checkbox:checked {
+            background-color: #007bff;
+            /* Cor de destaque quando marcado */
+            border-color: #007bff;
+        }
+
+        .custom-checkbox:focus {
+            box-shadow: 0 0 0 0.2rem rgba(0, 123, 255, 0.25);
+            /* Efeito de foco */
+        }
+
+        /* Estilo do label */
+        .custom-checkbox-container .form-check-label {
+            font-weight: bold;
+            /* Destaca o texto */
+            color: #333;
+            /* Cor do texto */
+        }
+
+
         @media (max-width: 768px) {
             .chamado-container {
                 padding: 10px;
@@ -88,8 +124,8 @@
 </head>
 
 <body>
-       <!-- Navbar -->
-       <nav class="navbar navbar-expand-lg navbar-dark mb-4">
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-dark mb-4">
         <div class="container-fluid">
             <a class="navbar-brand" href="#">Sistema de Chamados</a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
@@ -102,10 +138,10 @@
                         <a class="nav-link" href="index.html">Home</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="chamado.html">Abertura de Chamado</a>
+                        <a class="nav-link" href="../chamado.html">Abertura de Chamado</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="login.html">Sair</a>
+                        <a class="nav-link" href="../login.html">Sair</a>
                     </li>
                 </ul>
             </div>
@@ -114,7 +150,7 @@
 
     <!-- Visualização de Chamado -->
     <div class="container chamado-container">
-        <h4 class="text-center mb-4">Detalhes do Chamado - Admin</h4>
+        <h4 class="text-center mb-4">Detalhes do Chamado Ticket #0001</h4>
 
         <!-- Label: Data e Hora -->
         <div class="form-group">
@@ -150,7 +186,8 @@
         <!-- Input: Descrição do Problema -->
         <div class="form-group">
             <label for="descricao">Descrição do Problema:</label>
-            <textarea id="descricao" class="form-control" rows="4" disabled>Portão não está funcionando corretamente.</textarea>
+            <textarea id="descricao" class="form-control" rows="4"
+                disabled>Portão não está funcionando corretamente.</textarea>
         </div>
 
         <!-- Visualização das Fotos Anexadas -->
@@ -179,6 +216,13 @@
             <label for="responsavel">Responsável pelo Chamado:</label>
             <input type="text" id="responsavel" class="form-control" placeholder="Digite o nome do responsável">
         </div>
+
+        <!-- Input: Urgência -->
+        <div class="form-group form-check custom-checkbox-container">
+            <input type="checkbox" id="urgente" class="form-check-input custom-checkbox  ms-1">
+            <label for="urgente" class="form-check-label ms-1">Chamado Urgente</label>
+        </div>
+
 
         <!-- Botões -->
         <div class="d-flex justify-content-between mt-4">
