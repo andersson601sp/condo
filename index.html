@@ -23,8 +23,11 @@
             color: #fff;
             font-size: 18px;
             font-weight: bold;
-            margin: 0 auto;  /* Centraliza o gráfico */
+            margin: 0 auto;
             margin-top: 12px;
+        }
+        .chart i {
+            margin-right: 10px;
         }
         .nav-link {
             color: white;
@@ -78,17 +81,17 @@
         <div class="row text-center mt-4">
             <div class="col-md-4">
                 <div class="chart bg-success">
-                    50 Aberto
+                    <i class="fas fa-exclamation-circle"></i> 50 Aberto
                 </div>
             </div>
             <div class="col-md-4">
                 <div class="chart bg-warning">
-                    30 Em Andamento
+                    <i class="fas fa-spinner"></i> 30 Em Andamento
                 </div>
             </div>
             <div class="col-md-4">
                 <div class="chart bg-primary">
-                    20 Concluído
+                    <i class="fas fa-check-circle"></i> 20 Concluído
                 </div>
             </div>
         </div>
@@ -97,62 +100,84 @@
             <table class="table table-striped">
                 <thead>
                     <tr>
-                        <th></th>
+                        <th>Ticket</th>
                         <th>Descrição</th>
                         <th>Local</th>
                         <th>Situação</th>
                         <th>Data de Abertura</th>
+                        <th></th>
                     </tr>
                 </thead>
                 <tbody>
                     <tr>
-                        <td></td>
+                        <td>#0001</td>
                         <td>Portão não abre</td>
                         <td>Portão de entrada</td>
                         <td><span class="badge bg-success">Aberto</span></td>
                         <td>08/09/2024</td>
+                        <td>
+                           
+                        </td>
                     </tr>
                     <tr>
-                        <td></td>
+                        <td>#0002</td>
                         <td>Piscina fria</td>
                         <td>Piscina</td>
                         <td><span class="badge bg-warning">Em andamento</span></td>
                         <td>07/09/2024</td>
+                        <td>
+                           
+                        </td>
                     </tr>
                     <tr>
-                        <td></td>
+                        <td>#0003</td>
                         <td>Lâmpada queimada</td>
                         <td>Salão de jogos</td>
                         <td><span class="badge bg-primary">Concluído</span></td>
                         <td>06/09/2024</td>
+                        <td>
+                            
+                        </td>
                     </tr>
                     <tr>
-                        <td></td>
+                        <td>#0004</td>
                         <td>Porta Cademia</td>
                         <td>Academia</td>
                         <td><span class="badge bg-success">Aberto</span></td>
                         <td>06/09/2024</td>
+                        <td>
+                            
+                        </td>
                     </tr>
                     <tr>
-                        <td></td>
+                        <td>#0005</td>
                         <td>Cancela demora abrir</td>
                         <td>Portão de entrada</td>
                         <td><span class="badge bg-warning">Em andamento</span></td>
                         <td>30/08/2024</td>
+                        <td>
+                            
+                        </td>
                     </tr>
                     <tr>
-                        <td></td>
+                        <td>#0005</td>
                         <td>Churrasqueira suja</td>
                         <td>Quiosque</td>
                         <td><span class="badge bg-warning">Em andamento</span></td>
                         <td>12/08/2024</td>
+                        <td>
+                            
+                        </td>
                     </tr>
                     <tr>
-                        <td></td>
+                        <td>#0006</td>
                         <td>Lixo no chão</td>
                         <td>Acesso social</td>
                         <td><span class="badge bg-success">Aberto</span></td>
                         <td>08/08/2024</td>
+                        <td>
+                           
+                        </td>
                     </tr>
                 </tbody>
             </table>
